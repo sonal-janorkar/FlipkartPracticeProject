@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-17T10:25:15Z" name="Default suite" finished-at="2020-08-17T10:25:16Z" duration-ms="806">
+    <groups>
+    </groups>
+    <test started-at="2020-08-17T10:25:15Z" name="Default test" finished-at="2020-08-17T10:25:16Z" duration-ms="806">
+      <class name="com.qa.pages.FlipkartLogin">
+        <test-method signature="CorrectVal()[pri:0, instance:com.qa.pages.FlipkartLogin@35229f85]" started-at="2020-08-17T10:25:15Z" name="CorrectVal" finished-at="2020-08-17T10:25:16Z" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CorrectVal -->
+      </class> <!-- com.qa.pages.FlipkartLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
