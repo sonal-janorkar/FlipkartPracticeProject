@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Base {
 
 	public static WebDriver driver;
-	Properties proper;
+	public Properties proper;
 	
 	File file;
 	FileInputStream fis;
@@ -25,9 +26,9 @@ public class Base {
 	}
 	
 	
-	void ReadProperty()
+	public void ReadProperty()
 	{
-		System.out.println("insode reader");
+		//System.out.println("insode reader");
 		file =new File(System.getProperty("user.dir")+"/src/main/java/com/qa/config/config.properties");
 		try 
 		{
@@ -65,6 +66,9 @@ public class Base {
 		    System.out.println(proper.getProperty("driverPath"));
 			System.setProperty("webdriver.chrome.driver",proper.getProperty("driverPath") );
 			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get(proper.getProperty("url"));
 			
 		}	
