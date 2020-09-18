@@ -1,7 +1,5 @@
 package com.cg.StepDef;
 
-import org.testng.Assert;
-
 import com.qa.pages.FlipkartHomePage;
 import com.qa.pages.FlipkartLoginPage;
 import com.qa.testBase.Base;
