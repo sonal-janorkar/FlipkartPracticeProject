@@ -142,7 +142,7 @@
             <configuration>
             <projectName>BDD01</projectName>
             <outputDirectory>target/cucumber-JVM-reports</outputDirectory>
-            <cucumberOutput>target/cucumber-reports/Cucumber.json</cucumberOutput>
+            <cucumberOutput>target/json-output/cucumber.json</cucumberOutput>
             <skippedFails>true</skippedFails>
             <enableFlashCharts>true</enableFlashCharts>
             <buildNumber>42</buildNumber>
