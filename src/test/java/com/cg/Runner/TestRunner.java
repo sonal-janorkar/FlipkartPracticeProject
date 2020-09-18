@@ -8,7 +8,7 @@ import cucumber.api.junit.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	features={"Features/OppoSrchRslt.feature"},glue={"com.cg.StepDef"})
+	features={"Features/OppoSrchRslt.feature"},glue={"com.cg.StepDef"},plugin={"pretty","json:target/json-output/cucumber.json"})
 public class TestRunner
 {
 
